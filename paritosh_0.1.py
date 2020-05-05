@@ -49,3 +49,5 @@ srcpath = os.path.join(parent_dir, folder_to_be_segregated)
 
 # give any path you want
 segragete(srcpath)
+
+# Nakul check
