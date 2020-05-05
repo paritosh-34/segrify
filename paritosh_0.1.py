@@ -3,7 +3,7 @@ import shutil
 from pathlib import Path
 
 documents = ['pdf', 'doc', 'docx', 'txt', 'pptx', 'csv']
-images = ['jpg', 'jpeg', 'png', 'ico', 'PNG']
+images = ['jpg', 'jpeg', 'png', 'ico']
 compressed = ['zip', 'rar', 'bz2', '7z']
 videos = ['mp4', 'mkv']
 music = ['mp3', 'm3u8']
@@ -25,8 +25,8 @@ def movefiles(srcpath, file, foldername):
 
 
 def segragete(srcpath):
-    print(srcpath)
     """Specify the path to be segregated"""
+    print(srcpath)
 
     for file in os.listdir(srcpath):
 
@@ -36,7 +36,7 @@ def segragete(srcpath):
             fileReverse = file[::-1].split(".")[0]
 
             """Reversing the extension back to correct"""
-            fileReverse = fileReverse[::-1]
+            fileReverse = fileReverse[::-1].lower()
             
             if fileReverse in documents:
                 movefiles(srcpath, file, "Documents")
@@ -56,18 +56,8 @@ def segragete(srcpath):
                 movefiles(srcpath, file, "Others")
 
 
-# The parent directory of this file
-parent_dir = os.getcwd()
-
-# The folder that is to be segregated in this directory
-folder_to_be_segregated = "testing_folder"
-
-# Use path.join to work on all OS's
-srcpath = os.path.join(parent_dir, folder_to_be_segregated)
-
 """Edit main path accordingly"""
-mainPath = "c:\\Users\\nakul\\Downloads"
+mainPath = "/home/paritosh/PycharmProjects/test_downloads"
 
-# srcpath = parent_dir
 # give any path you want
 segragete(mainPath)
