@@ -13,16 +13,7 @@ pip install -r requirement.txt
 ```
 
 ## Usage
-In paritosh_0.1.py (at the end of file)
-```python
-...
-
-# give any path you want
-segragete(srcpath)
-
-...
-```
-Give any path you want instead of srcpath.
+Browse to a folder or simply paste the path to your folder and click Segrify.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
