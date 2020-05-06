@@ -16,3 +16,8 @@ function result(r) {
     document.getElementById("result").innerHTML = "Failed :(";
   }
 }
+
+eel.expose(setvalue);
+function setvalue(path2) {
+  const path = document.getElementById("path").value = path2;
+}

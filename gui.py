@@ -22,6 +22,7 @@ def selectFolder():
 
     directory_path = filedialog.askdirectory()
     print(directory_path)
+    eel.setvalue(directory_path)
 
 
 while True:
