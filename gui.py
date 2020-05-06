@@ -4,7 +4,7 @@ import tkinter as tk
 from tkinter import filedialog
 
 eel.init("templates")
-eel.start("index.html", block=False, size=(600, 600))
+eel.start("index.html", block=False, size=(600, 700))
 
 
 @eel.expose

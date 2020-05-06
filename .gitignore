@@ -1,2 +1,5 @@
 .idea/
 venv/
+.vscode/
+test_downloads/
+testing_folder/
