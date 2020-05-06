@@ -1,7 +1,7 @@
 import os
 import shutil
 from pathlib import Path
-from win10toast import ToastNotifier
+# from win10toast import ToastNotifier
 
 
 documents = ['pdf', 'doc', 'docx', 'txt', 'pptx', 'csv']
@@ -13,7 +13,7 @@ setup = ['exe', 'msi']
 iso = ['iso']
 key = ['pem', 'ppk']
 shortcuts = ["lnk"]
-toaster = ToastNotifier()
+# toaster = ToastNotifier()
 
 
 def movefiles(srcpath, file, foldername):
@@ -60,11 +60,15 @@ def segragete(srcpath):
                     movefiles(srcpath, file, "Shortcut's")
                 else:
                     movefiles(srcpath, file, "Others")
+                return True
     except Exception as e:
         print(e)
-        toaster.show_toast("Status", "Segregation failed")
-    finally:
-        toaster.show_toast("Status", "Segregation completed successfully")
+        print("Failed !")
+        return False
+        # toaster.show_toast("Status", "Segregation failed")
+    # finally:
+        # print("Segregation Comlete")
+        # toaster.show_toast("Status", "Segregation completed successfully")
 
 
 """Edit main path accordingly"""
@@ -74,4 +78,4 @@ def segragete(srcpath):
 mainPath = "c://Users//nakul//Desktop//android"
 
 # give any path you want
-segragete(mainPath)
+# segragete(mainPath)
