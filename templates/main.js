@@ -3,6 +3,10 @@ function run() {
   eel.run(path);
 }
 
+function select(){
+  eel.selectFolder();
+}
+
 eel.expose(result);
 function result(r) {
   console.log(r);
