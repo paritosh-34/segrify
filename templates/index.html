@@ -14,17 +14,19 @@
   <body>
     <div class="flex-wrapper">
       <div class="container">
-        <h1 class="items">Paste path to your Folder</h1>
+        <h1 class="items">Path to your Folder</h1>
         <input
-        type="text"
-        name="path"
-        id="path"
-        class="items"
-        placeholder="  Enter path here"
+          type="text"
+          name="path"
+          id="path"
+          class="items"
+          placeholder="  Enter path here"
         />
-        <div id="result"></div>
-        <button class="items" onclick="run()">Segrify</button>
-        <button class="items" onclick="select()">Choose folder</button>
+        <button id="folder" class="items" onclick="select()">Browse folder</button>
+        <div id="result">Choose a Folder😋</div>
+        <div id="action">
+          <button class="items" id="segrify" onclick="run()">Segrify</button>
+        </div>
       </div>
       <footer>
         <div>

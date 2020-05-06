@@ -11,13 +11,14 @@ eel.expose(result);
 function result(r) {
   console.log(r);
   if(r) {
-    document.getElementById("result").innerHTML = "Done :)";
+    document.getElementById("result").innerHTML = "Done ✌️";
+    document.getElementById("path").value = "";
   } else {
-    document.getElementById("result").innerHTML = "Failed :(";
+    document.getElementById("result").innerHTML = "Failed 😥";
   }
 }
 
 eel.expose(setvalue);
 function setvalue(path2) {
-  const path = document.getElementById("path").value = path2;
+  document.getElementById("path").value = path2;
 }
