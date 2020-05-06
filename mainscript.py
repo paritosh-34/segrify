@@ -60,7 +60,7 @@ def segragete(srcpath):
                     movefiles(srcpath, file, "Shortcut's")
                 else:
                     movefiles(srcpath, file, "Others")
-                return True
+        return True
     except Exception as e:
         print(e)
         print("Failed !")
