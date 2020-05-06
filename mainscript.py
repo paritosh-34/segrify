@@ -18,7 +18,7 @@ videos = ["mp4", "mkv", "3g2", "3gp", "flv", "h264", "m4v", "mov", "mpg", "mpeg"
 iso = ["iso", "dmg", "toast", "vcd"]
 keys = ["pem", "ppk"]
 shortcuts = ["lnk"]
-torrent = [".torrent"]
+torrent = ["torrent"]
 fonts = ["fnt", "fon", "otf", "ttf"]
 data_and_database_files = ["csv", "dat", "db", "dbf", "log", "mdb", "sql", "xml"]
 
@@ -30,7 +30,7 @@ structure = {
     "Documents": documents,
     "Fonts": fonts,
     "Images": images,
-    "Iso's (Disc/Media Files)": iso,
+    "Iso's (Disc or Media Files)": iso,
     "Music": music,
     "Programming": programming,
     "Setups (Installers)": setup,
