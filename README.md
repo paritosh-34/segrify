@@ -2,6 +2,8 @@
 
 Segrify is a program to clean and organize your PC.
 
+![Screenshot](img/screenshot.png)
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
